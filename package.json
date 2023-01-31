@@ -1,0 +1,25 @@
+{
+  "name": "next-runtime-env-var-repro",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start:staging": "dotenv -e .env.runtime.staging next start",
+    "start:production": "dotenv -e .env.runtime.production next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sentry/nextjs": "7.34.0",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "dotenv-cli": "^7.0.0",
+    "eslint": "8.32.0",
+    "eslint-config-next": "13.1.2",
+    "next": "^13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.4"
+  }
+}
